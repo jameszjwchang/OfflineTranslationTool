@@ -9,6 +9,9 @@ import SwiftUI
 import Translation
 
 struct ContentView: View {
+    
+    @AppStorage("onboardingComplete") var isOnboardingComplete: Bool = false
+    
     @State private var sourceText = "Hello, world!" // Default to English for this example
     @State private var targetText = ""
     @State private var languages = [
